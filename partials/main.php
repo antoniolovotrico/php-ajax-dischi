@@ -1,3 +1,4 @@
+<!-- The Main section include the container of the cds collection and with the foreach php method stamp cover,title,artist and year of every single album  -->
 <main>
                 <div class="cds_box">
                     <?php foreach ($dataBase as $value) { ?>

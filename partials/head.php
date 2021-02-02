@@ -1,3 +1,4 @@
+<!-- In the head section we find the beginning of the html code with all the metadata and link to style.css and google font -->
 <!DOCTYPE html>
 <html lang="en">
     <head>

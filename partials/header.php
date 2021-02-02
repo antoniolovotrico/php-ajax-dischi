@@ -1,3 +1,4 @@
+<!-- In the header section is contained the the top bar with the logo -->
 <body>
         <div id="app">
             <header>
