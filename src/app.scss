@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#id{
+    width: 100vw;
+    font-family: 'lato';
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top_bar{
+    width: 60%;
+    img{
+        height: 50px;
+    }
+}
+
+main{
+    width: 100%;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cds_box{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cds_container{
+    height: 300px;
+    width: 27%;
+    background-color: pink;
+}
