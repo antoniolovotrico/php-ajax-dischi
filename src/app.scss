@@ -4,14 +4,18 @@
     box-sizing: border-box;
 }
 
-#id{
+#app{
+    height: 100vh;
     width: 100vw;
     font-family: 'lato';
     display: flex;
     flex-direction: column;
+    background-color: darkgray;
+    overflow-y: scroll;
 }
 header{
     width: 100%;
+    height: 10%;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -27,8 +31,8 @@ header{
 }
 
 main{
+    height: 90%;
     width: 100%;
-    background-color: darkgray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,13 +40,23 @@ main{
 
 .cds_box{
     width: 60%;
+    height: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .cds_container{
-    height: 300px;
-    width: 27%;
-    background-color: pink;
+    height: 55%;
+    width: 28%;
+    background-color: black;
+    margin: 10px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    img{
+        height: 65%;
+    }
 }
