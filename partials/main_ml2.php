@@ -10,12 +10,6 @@
                 </div>
             </main>
         </div>
-        <!-- Axios CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-        <!-- VueJs CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
         <!-- link to javascript file -->
         <script src="../dist/js/app.js"></script>
     </body>

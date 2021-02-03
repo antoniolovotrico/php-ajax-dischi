@@ -1,4 +1,6 @@
 // open a new istance vuejs to call the api db_api.php
+import Vue from "vue";
+import axios from "axios";
 
 let app = new Vue ({
     el:"#app",
