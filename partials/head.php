@@ -9,6 +9,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
         <!-- style.css -->
-        <link rel="stylesheet" href="./dist/css/app.css">
+        <link rel="stylesheet" href="../dist/css/app.css">
         <title>php-ajax-dischi</title>
     </head>

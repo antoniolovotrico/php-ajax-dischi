@@ -3,6 +3,6 @@
         <div id="app">
             <header>
                 <div class="top_bar">
-                    <img src="./dist/img/logo.png" alt="logo">
+                    <img src="../dist/img/logo.png" alt="logo">
                 </div>
             </header>
