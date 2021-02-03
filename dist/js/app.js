@@ -7,7 +7,29 @@
   \********************/
 /***/ (() => {
 
+// open a new istance vuejs to call the api db_api.php
+var app = new Vue({
+  el: "#app",
+  data: {
+    music: []
+  },
+  methods: {
+    genFunc: function genFunc() {
+      var _this = this;
 
+      axios.get("http://localhost:8888/php-ajax-dischi/partials/db_api.php").then(function (response) {
+        console.log(response.data);
+
+        _this.music.push(response.data);
+
+        console.log(_this.music);
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.genFunc();
+  }
+});
 
 /***/ }),
 

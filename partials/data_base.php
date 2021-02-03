@@ -1,4 +1,3 @@
-<!-- In DataBase section we found all the data needed to complete the project  -->
 <?php 
 $dataBase = [
     [
