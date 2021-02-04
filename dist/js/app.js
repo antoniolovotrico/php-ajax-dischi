@@ -1851,23 +1851,34 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: "#app",
   data: {
-    music: []
+    music: [],
+    genre: [],
+    all: "0",
+    select: ""
+  },
+  mounted: function mounted() {
+    this.genFunc();
   },
   methods: {
+    // function to generate the cover of every single album from the api in the database file
     genFunc: function genFunc() {
       var _this = this;
 
       axios__WEBPACK_IMPORTED_MODULE_0___default().get("http://localhost:8888/php-ajax-dischi/partials/db_api.php").then(function (response) {
-        console.log(response.data);
+        _this.music = response.data;
 
-        _this.music.push(response.data);
+        _this.music.forEach(function (element) {
+          if (!_this.genre.includes(element.genre)) {
+            _this.genre.splice(0, 0, element.genre);
 
-        console.log(_this.music);
+            ;
+          }
+        });
+
+        console.log(_this.genre);
+        console.log(_this.all);
       });
     }
-  },
-  mounted: function mounted() {
-    this.genFunc();
   }
 });
 

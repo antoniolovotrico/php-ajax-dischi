@@ -23,10 +23,17 @@ header {
 }
 
 .top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 60%;
 }
 .top_bar img {
   height: 50px;
+}
+.top_bar select {
+  height: 80%;
+  width: 20%;
 }
 
 main {

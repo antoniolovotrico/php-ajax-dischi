@@ -24,9 +24,16 @@ header{
 }
 
 .top_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 60%;
     img{
         height: 50px;
+    }
+    select{
+        height: 80%;
+        width: 20%;
     }
 }
 
