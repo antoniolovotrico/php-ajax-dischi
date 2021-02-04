@@ -1853,8 +1853,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   data: {
     music: [],
     genre: [],
-    all: "0",
-    select: ""
+    selected: ""
   },
   mounted: function mounted() {
     this.genFunc();
@@ -1876,7 +1875,21 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
         });
 
         console.log(_this.genre);
-        console.log(_this.all);
+      });
+    }
+  },
+  computed: {
+    //this function will search and show only contacts with letters in common with our digits in search input
+    filterMusic: function filterMusic() {
+      var filterGenre = this.selected;
+      return this.music.filter(function (music) {
+        var filtered = true;
+
+        if (filterGenre && filterGenre.length > 0) {
+          filtered = music.genre == filterGenre;
+        }
+
+        return filtered;
       });
     }
   }

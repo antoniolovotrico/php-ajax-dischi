@@ -7,8 +7,7 @@ let app = new Vue ({
     data:{
         music: [],
         genre: [],
-        all: "0",
-        select:"",
+        selected: "",
 
     },
     mounted(){
@@ -26,9 +25,22 @@ let app = new Vue ({
                     }      
                 });
                 console.log(this.genre); 
-                console.log(this.all);          
-            })
+            });
         }
+        
+    },
+    computed: {
+    //this function will search and show only contacts with letters in common with our digits in search input
+    filterMusic: function () {
+        let filterGenre= this.selected;
+        return this.music.filter(function(music){
+          let filtered = true;
+          if(filterGenre && filterGenre.length > 0){
+            filtered = music.genre == filterGenre;
+          }
+          return filtered;
+        })
+      }
     }
-    
+         
 })
