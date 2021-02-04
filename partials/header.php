@@ -6,7 +6,7 @@
                     <img src="../dist/img/logo.png" alt="logo">
                     <select name="" id="" v-model="selected">
                         <option value="All">All</option>
-                        <option v-for="item in genre" :value="item">{{item}}</option>
+                        <option v-for="item in genre">{{item}}</option>
                     </select>
                 </div>
             </header>

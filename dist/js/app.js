@@ -1879,14 +1879,14 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
     }
   },
   computed: {
-    //this function will search and show only contacts with letters in common with our digits in search input
+    //this function will search and show only albums with relation with the options choosed in the select
     filterMusic: function filterMusic() {
       var filterGenre = this.selected;
-      return this.music.filter(function (music) {
+      return this.music.filter(function (element) {
         var filtered = true;
 
         if (filterGenre && filterGenre.length > 0) {
-          filtered = music.genre == filterGenre;
+          filtered = element.genre == filterGenre;
         }
 
         return filtered;

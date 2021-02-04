@@ -32,11 +32,11 @@ let app = new Vue ({
     computed: {
     //this function will search and show only albums with relation with the options choosed in the select
     filterMusic: function () {
-        let filterGenre= this.selected;
-        return this.music.filter(function(music){
+        let filterGenre = this.selected;
+        return this.music.filter(function(element){
           let filtered = true;
           if(filterGenre && filterGenre.length > 0){
-            filtered = music.genre == filterGenre;
+            filtered = element.genre == filterGenre;
           }
           return filtered;
         })
