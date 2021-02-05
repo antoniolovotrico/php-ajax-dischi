@@ -1881,15 +1881,18 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   computed: {
     //this function will search and show only albums with relation with the options choosed in the select
     filterMusic: function filterMusic() {
-      var filterGenre = this.selected;
+      var _this2 = this;
+
       return this.music.filter(function (element) {
         var filtered = true;
 
-        if (filterGenre && filterGenre.length > 0) {
-          filtered = element.genre == filterGenre;
+        if (_this2.selected.length > 0 && _this2.selected !== "All") {
+          filtered = element.genre == _this2.selected;
+          console.log(filtered);
+          return filtered;
+        } else {
+          return element.genre;
         }
-
-        return filtered;
       });
     }
   }

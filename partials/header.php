@@ -4,8 +4,8 @@
             <header>
                 <div class="top_bar">
                     <img src="../dist/img/logo.png" alt="logo">
-                    <select name="" id="" v-model="selected">
-                        <option value="All">All</option>
+                    <select v-model="selected">
+                        <option>All</option>
                         <option v-for="item in genre">{{item}}</option>
                     </select>
                 </div>

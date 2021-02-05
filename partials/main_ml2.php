@@ -2,7 +2,7 @@
 <main>
                 <div class="cds_box">
                         <div class="cds_container" v-for="lp in filterMusic">
-                            <img :src="lp.poster" alt="">
+                            <img :src="lp.poster">
                             <h3>{{lp.title}}</h3>
                             <p>{{lp.author}}</p>
                             <p>{{lp.year}}</p>   
