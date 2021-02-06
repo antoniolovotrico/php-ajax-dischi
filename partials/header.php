@@ -5,7 +5,7 @@
                 <div class="top_bar">
                     <img src="../dist/img/logo.png" alt="logo">
                     <select v-model="selected">
-                        <option>All</option>
+                        <option value="0">All</option>
                         <option v-for="item in genre">{{item}}</option>
                     </select>
                 </div>

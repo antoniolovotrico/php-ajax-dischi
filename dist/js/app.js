@@ -1873,6 +1873,20 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
             ;
           }
         });
+
+        console.log(_this.genre);
+      });
+    }
+  },
+  computed: {
+    //this function will search and show only albums with relation with the options choosed in the select
+    filterMusic: function filterMusic() {
+      var _this2 = this;
+
+      return this.music.filter(function (element) {
+        if (_this2.selected == element.genre) {
+          return element.genre;
+        }
       });
     }
   }

@@ -24,8 +24,21 @@ let app = new Vue ({
                         this.genre.splice(0,0,element.genre);; 
                     }      
                 });
+                console.log(this.genre); 
             });
         }
         
-    }
+    },
+    computed: {
+    //this function will search and show only albums with relation with the options choosed in the select
+    filterMusic: function () {
+        return this.music.filter(element => { 
+            if (this.selected == element.genre) {    
+                return element.genre; 
+            } else if (this.selected == 0){
+                return element.genre;
+            }
+        })
+      }
+    }       
 })
