@@ -17,6 +17,6 @@
             </main>
         </div>
         <!-- link to javascript file -->
-        <script src="../dist/js/app.js"></script>
+        <script src="../dist/js/app_vue_select.js"></script>
     </body>
 </html>

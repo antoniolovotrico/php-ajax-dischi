@@ -1834,10 +1834,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/app_vue_select.js":
+/*!*******************************!*\
+  !*** ./src/app_vue_select.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1873,22 +1873,6 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
             ;
           }
         });
-
-        console.log(_this.genre);
-      });
-    }
-  },
-  computed: {
-    //this function will search and show only albums with relation with the options choosed in the select
-    filterMusic: function filterMusic() {
-      var _this2 = this;
-
-      return this.music.filter(function (element) {
-        if (_this2.selected == element.genre) {
-          return element.genre;
-        } else if (_this2.selected == 0) {
-          return element.genre;
-        }
       });
     }
   }
@@ -14190,11 +14174,11 @@ Vue.compile = compileToFunctions;
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/app": 0
+/******/ 			"/js/app_vue_select": 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
-/******/ 			["./src/app.js"],
+/******/ 			["./src/app_vue_select.js"],
 /******/ 			["./src/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
