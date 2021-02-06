@@ -2,6 +2,6 @@
 <?php
 include __DIR__ . '/../partials/data_base.php';
 include __DIR__ . '/../partials/head.php';
-include __DIR__ . '/../partials/header.php';
-include __DIR__ . '/../partials/main_ml2.php';
+include __DIR__ . '/../partials/header_vue_select.php';
+include __DIR__ . '/../partials/main_ml2_vue_select.php';
 ?>
